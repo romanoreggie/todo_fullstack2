@@ -1,4 +1,4 @@
-var db = require('./mopdels/todo.js');
+var db = require('./models');
 
 var todo_list = [
   {
@@ -11,16 +11,16 @@ var todo_list = [
   },
 ];
 
-db.Todo.remove({}, function(err, task){
-  if(err) {
-    console.log('Error occured in remove', err);
-  } else {
-    console.log('Removed all task');
-
-    db.Todo.create(books_list, function(err, task){
-      if (err) { return console.log('err', err); }
-      console.log("created", task.length, "task");
-      process.exit();
-    })
-  }
-})
+// db.Todo.remove({}, function(err, task){
+//   if(err) {
+//     console.log('Error occured in remove', err);
+//   } else {
+//     console.log('Removed all task');
+//
+//     db.Todo.create(books_list, function(err, task){
+//       if (err) { return console.log('err', err); }
+//       console.log("created", task.length, "task");
+//       process.exit();
+//     })
+//   }
+// });

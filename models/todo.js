@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
-var TodoSchema = new mongoose.Schema({
+var TodoSchema = new Schema({
   task: String,
   description: String
 });
